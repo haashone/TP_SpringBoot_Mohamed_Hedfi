@@ -4,7 +4,7 @@
  # Partie 1
  ## Étape 5 les dépendances
  ### • Web:
- #### dsqds
+ Créez des applications Web, y compris RESTful, à l'aide de Spring MVC. Utilise Apache Tomcat comme conteneur intégré par défaut.
  ### • JPA
  ### • Hibernate
  ### • H2
