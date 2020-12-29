@@ -5,6 +5,10 @@
  ## Étape 5 les dépendances
  ### • Web:
  #### dsqds
- ### • Web
+ ### • JPA
+ ### • Hibernate
+ ### • H2
+ ### • DevTools
+ ### • Thymeleaf
  
 
