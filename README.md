@@ -5,8 +5,11 @@
  ## Étape 5 les dépendances
  ### • Web:
  Créez des applications Web, y compris RESTful, à l'aide de Spring MVC. Utilise Apache Tomcat comme conteneur intégré par défaut.
- ### • JPA
- ### • Hibernate
+ ### • JPA:
+ Persister les données en SQL avec l'API Java Persistence à l'aide de Spring Data et Hibernate.
+ ### • Hibernate:
+ Permet aux développeurs d'écrire plus facilement des applications dont les données survivent au processus d'application.
+ Hibernate se préoccupe de la persistance des données car elle s'applique aux bases de données relationnelles.
  ### • H2
  ### • DevTools
  ### • Thymeleaf
