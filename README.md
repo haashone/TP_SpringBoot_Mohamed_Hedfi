@@ -30,6 +30,7 @@
    
    3. envoi de paramètre : utilisation de l'annotation `@RequestParam(name="nameGET", required=false, defaultValue="World")`.
                            
-         • **name="nameGET":** le nom de variable à utiliser dans le lien. exemple : `http://localhost:8080/greeting?nameGET=Mohamed`
-         • **required=false:**
+         • **name="nameGET":** le nom de variable à utiliser dans l'url. exemple : `http://localhost:8080/greeting?nameGET=Mohamed`.
+         
+         • **required=false:** l'utilisateur n'est pas obligé d'indiquer la variable `nameGET` dans l'url. Elle est facultative. exemple : `http://localhost:8080/greeting`.
          • **defaultValue="world":**
