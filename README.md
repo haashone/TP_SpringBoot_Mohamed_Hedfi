@@ -171,7 +171,7 @@
     Exemple:
     
     ```
-    	RestTemplate restTemplateProperties = new RestTemplate();
+    RestTemplate restTemplateProperties = new RestTemplate();
 	RestTemplate restTemplateWeather = new RestTemplate();
 	String linkDataGouv = "https://api-adresse.data.gouv.fr/search/?q=" + address.getContent() + "&limit=1";
 
