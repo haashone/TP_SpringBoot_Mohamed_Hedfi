@@ -64,7 +64,7 @@
    
    ```
    <body>
-	**<div th:insert="fragments/navbar :: navbar"></div>**
+	<div th:insert="fragments/navbar :: navbar"></div>
 
 	<div class="container" style="margin-top: 50px">
 		<h2 th:text=" ' Adresse : ' + ${content} " />
@@ -87,4 +87,6 @@
 
 </body>
    ```
+   
+ ## Étape 30
  
