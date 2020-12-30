@@ -1,5 +1,8 @@
 # TP_SpringBoot_Mohamed_Hedfi
- ![alt text](https://github.com/haashone/TP_SpringBoot_Mohamed_Hedfi/blob/main/src/main/resources/static/img/api.png?raw=true)
+ https://github.com/haashone/TP_SpringBoot_Mohamed_Hedfi
+ 
+ 
+ 
  
  # Partie 1
  ## Étape 5 les dépendances
@@ -43,7 +46,7 @@
    
    ## Étape 18
    Explication l’apparition de la table `ADRESS`: utilisation de l'annotation `@Entity` dans la classe `Adress`.
-   Indication de clef primaire de table : `@Id`.
+   Indication de clé primaire de table : `@Id`.
    
    ## Étape 20
    La requête `SELECT *` en SQL, permet de lister les tuples que nous avons inséré dans le fichier `data.sql` 
@@ -52,3 +55,112 @@
    L'annotation `@Autowired` permet l’injection de dépendances.
    Le conteneur Spring peut gérer automatiquement les relations entre les beans. C'est le **Spring bean autowiring**.
    
+   ## Étape 26
+   **Exemple**:
+   ![alt text](https://github.com/haashone/TP_SpringBoot_Mohamed_Hedfi/blob/main/captures/table_adresse.PNG)
+
+   ## Étape 28
+   Création de fichier `navbar.html` et le placer dans `templates/fragments`.
+   Utilisation de `<div th:insert="fragments/navbar :: navbar"></div>` dans les autres fichiers html pour insérer le navbar sans reécrire le code.
+   
+   Exemple:
+   
+   ```
+   <body>
+	<div th:insert="fragments/navbar :: navbar"></div>
+
+	<div class="container" style="margin-top: 50px">
+		<h2 th:text=" ' Adresse : ' + ${content} " />
+		<div class="row">
+			
+			<div class="col-6">
+				<h4 th:text=" '• Température : ' + ${temp} " />
+			</div>
+			
+			<div class="col-6">
+				<h4 th:text=" '• Humidité : ' + ${humidity} " />
+				<h4 th:text=" '• Pression : ' + ${pressure} " />
+				<h4 th:text=" '• TimeZone : ' + ${timeZone} " />
+
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+   ```
+   
+ ## Étape 30 Bootstrap
+ On peut insérer Bootstrap dans le projet à l'aide de **Content Delivery Network CDN**.
+ 
+ • insertion des fichiers de style:
+ ```
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+ ```
+ • insertion de JavaScript:
+  ```
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ ```
+ • Exemple:
+ ```
+ <head>
+      	  <title>Adresses</title>
+		  <meta charset="utf-8"/>
+		  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ </head>
+ 
+ <body>
+   <div th:insert="fragments/navbar :: navbar"></div>
+   
+           <div class="container" style="margin-top:70px"> 
+            <h2> Les differentes adresses </h2>
+            <div class="row">
+              
+			
+        <table class="table">
+               <thead class="thead-light">
+                <tr>
+                    <th>Id</th>
+                    <th>Content</th>
+                    <th>Creation</th>
+                    <th>Auteur</th>
+                </tr>
+               </thead>
+	       
+                <tr th:each ="adresse : ${allAdresses}">
+                    <td th:text="${adresse.id}">A Smoke Test'</td>
+                	<td th:text="${adresse.content}">A Smoke Test'</td>
+                	<td th:text="${adresse.creation}">A Smoke Test'</td>
+                	<td th:text="${adresse.auteur}">A Smoke Test'</td>
+                </tr>
+        </table>
+            
+            </div>
+           </div>
+            
+ </body>
+ ```
+ 
+ 
+ # Partie 2
+ ## Étape 6
+ 1. La clé est obligatoire pour utiliser les services de l'API OpenWeatherMap.
+    
+    Exemple: `api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}`.
+    
+ 2. `api.openweathermap.org/data/2.5/weather?`.
+ Les paramètres : https://openweathermap.org/current
+ 
+ 3. La méthode `HTTP` utilisée est `GET`.
+ 
+ 4. `api.openweathermap.org/data/2.5/weather?param=val,...`
+ 
+    Exemples de paramètres : q, id, lat&lon, zip, ... Tous les paramètres : https://openweathermap.org/current
+     
