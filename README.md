@@ -37,3 +37,6 @@
          • **defaultValue="world":** la valeur par défaut de la vairable `nameGET` est `world`.
          
       On peut passer le nom variable au modèle avec : `model.addAttribute("nomTemplate", nameGET)`.
+      
+   ## Étape 17
+   
