@@ -170,6 +170,8 @@
     
     Exemple:
     ![alt text](https://github.com/haashone/TP_SpringBoot_Mohamed_Hedfi/blob/main/captures/exemple.PNG)
+    
+    
     ```
     		RestTemplate restTemplateProperties = new RestTemplate();
 		RestTemplate restTemplateWeather = new RestTemplate();
