@@ -167,4 +167,7 @@
  5. Pour afficher la température par GPS: `api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}`
  
     Pour afficher la prévision par GPS: `api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}`
-     
+    
+    Exemple:
+    ![alt text](https://github.com/haashone/TP_SpringBoot_Mohamed_Hedfi/blob/main/captures/exemple.PNG)
+
