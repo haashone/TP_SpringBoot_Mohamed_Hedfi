@@ -52,3 +52,8 @@
    L'annotation `@Autowired` permet l’injection de dépendances.
    Le conteneur Spring peut gérer automatiquement les relations entre les beans. C'est le **Spring bean autowiring**.
    
+   ## Étape 26
+   ![alt text](https://github.com/haashone/TP_SpringBoot_Mohamed_Hedfi/blob/main/captures/table_adresse.PNG)
+
+   
+ 
