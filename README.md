@@ -155,5 +155,12 @@
     
     Exemple: `api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}`.
     
- 2. `api.openweathermap.org/data/2.5/weather?`
+ 2. `api.openweathermap.org/data/2.5/weather?`.
  Les paramètres : https://openweathermap.org/current
+ 
+ 3. La méthode `HTTP` utilisée est `GET`.
+ 
+ 4. `api.openweathermap.org/data/2.5/weather?param=val,...`
+ 
+    Exemples de paramètres : q, id, lat&lon, zip, ... Tous les paramètres : https://openweathermap.org/current
+     
