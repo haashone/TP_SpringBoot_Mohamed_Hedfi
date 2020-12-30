@@ -23,7 +23,7 @@
  
  
   ## Étape 13
-  #### 1. paramétrage de l'url d'appel "/greeting" : utilisation de l'annotation `@GetMapping("/greeting")` dans le contrôleur.
-  #### 2. choix de fichier `html` à afficher
-  #### 3.
+   1. paramétrage de l'url d'appel "/greeting" : utilisation de l'annotation `@GetMapping("/greeting")` dans le contrôleur.
+   2. choix de fichier `html` à afficher : le nom de fichier est indiqué dans le return de la fonction
+   3. 
 
