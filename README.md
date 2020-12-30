@@ -163,4 +163,8 @@
  4. `api.openweathermap.org/data/2.5/weather?param=val,...`
  
     Exemples de paramètres : q, id, lat&lon, zip, ... Tous les paramètres : https://openweathermap.org/current
+    
+ 5. Pour afficher la température par GPS: `api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}`
+ 
+    Pour afficher la prévision par GPS: `api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}`
      
