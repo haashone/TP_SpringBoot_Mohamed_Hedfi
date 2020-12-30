@@ -169,8 +169,6 @@
     Pour afficher la prévision par GPS: `api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}`
     
     Exemple:
-    ![alt text](https://github.com/haashone/TP_SpringBoot_Mohamed_Hedfi/blob/main/captures/exemple.PNG)
-    
     
     ```
     		RestTemplate restTemplateProperties = new RestTemplate();
@@ -187,4 +185,7 @@
 
 		WeatherProperties weatherResult = restTemplateWeather.getForObject(linkWeather, WeatherProperties.class);
     ```
+    
+    
+    ![alt text](https://github.com/haashone/TP_SpringBoot_Mohamed_Hedfi/blob/main/captures/exemple.PNG)
 
