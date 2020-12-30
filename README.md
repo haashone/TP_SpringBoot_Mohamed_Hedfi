@@ -1,5 +1,8 @@
 # TP_SpringBoot_Mohamed_Hedfi
- (https://github.com/haashone/TP_SpringBoot_Mohamed_Hedfi)
+ https://github.com/haashone/TP_SpringBoot_Mohamed_Hedfi
+ 
+ 
+ 
  
  # Partie 1
  ## Étape 5 les dépendances
@@ -43,7 +46,7 @@
    
    ## Étape 18
    Explication l’apparition de la table `ADRESS`: utilisation de l'annotation `@Entity` dans la classe `Adress`.
-   Indication de clef primaire de table : `@Id`.
+   Indication de clé primaire de table : `@Id`.
    
    ## Étape 20
    La requête `SELECT *` en SQL, permet de lister les tuples que nous avons inséré dans le fichier `data.sql` 
@@ -148,3 +151,6 @@
  
  # Partie 2
  ## Étape 6
+ 1. La clé est obligatoire pour utiliser les services de l'API OpenWeatherMap.
+ 
+ Exemple: `api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}`
