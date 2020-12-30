@@ -23,7 +23,7 @@
  
  
   ## Étape 13
-  ### 1. paramétrage de l'url d'appel "/greeting" : `@GetMapping("/greeting")` dans le contrôleur
-  ### 2.
-  ### 3.
+  #### 1. paramétrage de l'url d'appel "/greeting" : `@GetMapping("/greeting")` dans le contrôleur
+  #### 2.
+  #### 3.
 
