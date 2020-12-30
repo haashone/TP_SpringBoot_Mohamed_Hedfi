@@ -111,8 +111,9 @@
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-      </head>
-   <body>
+ </head>
+ 
+ <body>
    <div th:insert="fragments/navbar :: navbar"></div>
    
            <div class="container" style="margin-top:70px"> 
@@ -129,16 +130,17 @@
                     <th>Auteur</th>
                 </tr>
                </thead>
+	       
                 <tr th:each ="adresse : ${allAdresses}">
                     <td th:text="${adresse.id}">A Smoke Test'</td>
                 	<td th:text="${adresse.content}">A Smoke Test'</td>
                 	<td th:text="${adresse.creation}">A Smoke Test'</td>
                 	<td th:text="${adresse.auteur}">A Smoke Test'</td>
                 </tr>
-            </table>
+        </table>
             
             </div>
            </div>
             
-   </body>
+ </body>
  ```
