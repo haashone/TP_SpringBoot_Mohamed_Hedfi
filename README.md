@@ -53,7 +53,38 @@
    Le conteneur Spring peut gérer automatiquement les relations entre les beans. C'est le **Spring bean autowiring**.
    
    ## Étape 26
+   **Exemple**:
    ![alt text](https://github.com/haashone/TP_SpringBoot_Mohamed_Hedfi/blob/main/captures/table_adresse.PNG)
 
+   ## Étape 28
+   Création de fichier `navbar.html` et le placer dans `templates/fragments`.
+   Utilisation de `<div th:insert="fragments/navbar :: navbar"></div>` dans les autres fichiers html pour insérer le navbar sans reécrire le code.
    
+   Exemple:
+   
+   ```
+   <body>
+	<div th:insert="fragments/navbar :: navbar"></div>
+
+	<div class="container" style="margin-top: 50px">
+		<h2 th:text=" ' Adresse : ' + ${content} " />
+		<div class="row">
+			
+			<div class="col-6">
+				<h4 th:text=" '• Température : ' + ${temp} " />
+			</div>
+			
+			<div class="col-6">
+				<h4 th:text=" '• Humidité : ' + ${humidity} " />
+				<h4 th:text=" '• Pression : ' + ${pressure} " />
+				<h4 th:text=" '• TimeZone : ' + ${timeZone} " />
+
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+   ```
  
