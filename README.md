@@ -152,5 +152,8 @@
  # Partie 2
  ## Étape 6
  1. La clé est obligatoire pour utiliser les services de l'API OpenWeatherMap.
- 
- Exemple: `api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}`
+    
+    Exemple: `api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}`.
+    
+ 2. `api.openweathermap.org/data/2.5/weather?`
+ Les paramètres : https://openweathermap.org/current
