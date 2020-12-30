@@ -9,7 +9,21 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class Index {
 
 	@GetMapping("/")
-	public String greeting(Model model) {
+	public String DefaultIndex(Model model) {
+		
+		//model.addAttribute("nomTemplate");
+		return "index";
+	}
+	
+	@GetMapping("/index")
+	public String index(Model model) {
+		
+		//model.addAttribute("nomTemplate");
+		return "index";
+	}
+	
+	@GetMapping("/home")
+	public String home(Model model) {
 		
 		//model.addAttribute("nomTemplate");
 		return "index";
