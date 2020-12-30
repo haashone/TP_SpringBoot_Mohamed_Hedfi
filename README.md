@@ -39,4 +39,16 @@
       On peut passer le nom variable au modèle avec : `model.addAttribute("nomTemplate", nameGET)`.
       
    ## Étape 17
+   La table `ADRESS` est créée automatiquement.
+   
+   ## Étape 18
+   Explication l’apparition de la table `ADRESS`: utilisation de l'annotation `@Entity` dans la classe `Adress`.
+   Indication de clef primaire de table : `@Id`.
+   
+   ## Étape 20
+   La requête `SELECT *` en SQL, permet de lister les tuples que nous avons inséré dans le fichier `data.sql` 
+   
+   ## Étape 23 @Autowired
+   L'annotation `@Autowired` permet l’injection de dépendances.
+   Le conteneur Spring peut gérer automatiquement les relations entre les beans. C'est le **Spring bean autowiring**.
    
