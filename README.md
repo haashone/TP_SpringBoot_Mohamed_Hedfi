@@ -26,6 +26,7 @@
    1. paramétrage de l'url d'appel "/greeting" : utilisation de l'annotation `@GetMapping("/greeting")` dans le contrôleur.
    2. choix de fichier `html` à afficher : le nom de fichier est indiqué dans le return de la fonction et le fichier html existe dans le dossier `templates`.
    exemple : return "greeting".
+   
    3. envoi de paramètre : utilisation de l'annotation `@RequestParam(name="nameGET", required=false, defaultValue="World")`.
                            • **name="nameGET":** eze
                            • **required=false:**
