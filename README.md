@@ -163,4 +163,29 @@
  4. `api.openweathermap.org/data/2.5/weather?param=val,...`
  
     Exemples de paramètres : q, id, lat&lon, zip, ... Tous les paramètres : https://openweathermap.org/current
-     
+    
+ 5. Pour afficher la température par GPS: `api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}`
+ 
+    Pour afficher la prévision par GPS: `api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}`
+    
+    Exemple:
+    
+    ```
+    RestTemplate restTemplateProperties = new RestTemplate();
+	RestTemplate restTemplateWeather = new RestTemplate();
+	String linkDataGouv = "https://api-adresse.data.gouv.fr/search/?q=" + address.getContent() + "&limit=1";
+
+	LocationProperties result = restTemplateProperties.getForObject(linkDataGouv, LocationProperties.class);
+
+	double lon = result.getFeatures().get(0).getGeometry().getCoordinates().get(0);
+	double lat = result.getFeatures().get(0).getGeometry().getCoordinates().get(1);
+
+	String linkWeather = "http://api.openweathermap.org/data/2.5/weather?" + "lat=" + String.valueOf(lat) + "&lon="
+				+ String.valueOf(lon) + "&appid=" + key + "&units=metric";
+
+	WeatherProperties weatherResult = restTemplateWeather.getForObject(linkWeather, WeatherProperties.class);
+    ```
+    
+    
+    ![alt text](https://github.com/haashone/TP_SpringBoot_Mohamed_Hedfi/blob/main/captures/exemple.PNG)
+
