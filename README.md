@@ -29,4 +29,7 @@
       exemple : return "greeting".
    
    3. envoi de paramètre : utilisation de l'annotation `@RequestParam(name="nameGET", required=false, defaultValue="World")`.
-   • sdds
+                           
+         • **name="nameGET":** eze
+         • **required=false:**
+         • **defaultValue="world":**
